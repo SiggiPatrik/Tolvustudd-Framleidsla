@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Verkefni 2</title>
+		<title>Verkefni 3</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -39,40 +39,41 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Verkefni 2</h2>
-							<p>Tölvustuddur skurður </p>
+							<h2>Verkefni 3</h2>
+							<p>3D prentun og 3D skönnun </p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
 								<section>
 									<h2>Inngangur</h2>
-									<p>Þessu verkefni er skipt í þrjá hluta, tvö einstaklingsverkefni og eitt hópaverkefni. Í fyrra einstaklingsverkefninu á að nota vínylskera til að búa til eitthvað, límmiða til dæmis. Í seinna einstaklingsverkefninu á að hanna parametrískt, geirneglt módel af byggingareiningum úr annaðhvort krossvið eða akríl. Hópaverkefnið snýst um að velja laserskera og ákvarða kerf fyrir þann skera með prófunum.</p>
+									<p>Þessu verkefni er skipt í þrennt. Fyrsti hluti er að hanna módel fyrir 3D prentun sem ekki væri hægt að framleiða með frádráttaraðferðum. Í öðrum hluta á að 3D skanna einhvern hlut með t.d. photogrammetríu. Þriðji hlutinn tengist fyrsta hlutanum smá. Í honum á að ákvarða hönnunarreglur eða skorður vegna prentara. Til dæmis lágmarksveggþykkt, þörf á stuðning, max bridging lengd o.s.frv.  </p>
 									<hr />
                                     
                                     
 									<header>
-										<h2>Fyrra Einstaklingsverkefnið</h2>
+										<h2>Hönnun á 3D módeli</h2>
 									</header>
-									<p>Ég tek virkan þátt í Team Spark og mér datt í hug að gera eitthvað tengt því. Ég fann því logo liðsins á .svg formatti og færði yfir í Inkscape. Það var svo skorið út með vínylskeranum sem gekk strax í fyrstu tilraun.</p>
-									<div class="row">
-                                      <div class="column">
-                                        <img src="images/vinylskeri.jpg" alt="Vinyl cutter" style="width:100%">
-                                      </div>
-                                      <div class="column">
-                                        <img src="images/limmidi.jpg" alt="Spark logo cutout" style="width:100%">
-                                      </div>
+									<p>Módelið sem hannað var er svokallaður "spacer" sem á að halda sellunum kyrrum innan Team Spark bílsins. Samtals eru 144 sellur í bílnum, þeim er svo skipt í 6 segment og innan í hverju segmenti eru tveir 'cell banks'. Fyrir fólk sem er lélegt í hugarreikning þá þýðir það að í hverjum cell bank eru 12 sellur í hverjum cell bank. Sellurnar líta svona út:</p>
+									<div class="row aln-center">
+                                        <img src="images/Verkefni3/sella.jpg" alt="Melasta pouch cell" style="width:60%">
                                     </div>
-									<p>Stafirnir voru fjarlægðir án transfer filmu því ég vildi nota límmiðan sem cover svo hægt væri að spray-painta flutningagám liðsins. Mögulega verður límmiðinn skorinn aftur út nema töluvert stærri þar sem flutningagámurinn er nú ansi stór. Til að eyða ekki efni var stöfunum ekki hent heldur voru þeir nýttir í smá "friendly banter" við Vélina. Vélin er sem sagt með eitt herbergi á Smyrilsvegi 22 þar sem skrifstofur Team Spark eru. Annar nemandi hafði gert lítið merki vélarinnar og fest á hurðina að rýminu þeirra. Hins vegar er Spark svo miklu stærra og betra að það átti skilið stærri og betri límmiða. Sjá mynd:</p>
+									<p>
+                                    Svörtu og rauðu plaststykkin hylja 'tabba' sellunnar. Þessir tabbar tengjast többum hinna sellanna í bankanum og eru punktsoðnir saman. Tabbarnir eru svo þræddir í gegnum spacerinn og í gegnum PCB bretti sem kallast HCPCB. Spacerinn má sjá á næstu mynd:
+                                    </p>
                                     <div class="row aln-center">
-                                        <img src="images/velinhurd.jpg" alt="Door with Spark logo" style="width:60%">
+                                        <img src="images/Verkefni3/spacergamall.png" alt="Spacer" style="width:60%">
                                     </div>
                                     <p>
-                                    Þessi límmiði fór upp á hurð Vélarinnar þann 20. febrúar 2024. Sjáum til hversu lengi hann endist...
+                                    Hér sjást löngu og mjóu götin sem tabbarnir fara í gegnum. Vandamál kom samt upp því þegar HCPCB er sett ofan á spacerinn og fest við eins og á mynd
                                     </p>
-                                    <p>
-                                    <b>Update:</b> Miðinn hefur verið tekinn niður þann 22. febrúar 2024. Hann var ekki mjög langlífur.
-                                    </p>
+                                    <div class="row aln-center">
+                                        <img src="images/Verkefni3/HCPCBsamsett.webp" alt="HCPCB og Spacer" style="width:60%">
+                                    </div>
+                                    En í þverskurð má sjá vandamálið sem myndast þar sem HCPCB og spacer mætast. Götin á HCPCB og spacer eru ekki alveg eins og því eru líkur á að tabbarnir komist ekki auðveldlega í gegn, sjá mynd:
+                                    <div class="row aln-center">
+                                        <img src="images/Verkefni3/TabsProblem.webp" alt="Spacer" style="width:60%">
+                                    </div>
                                     <hr/>
                                     
                                     
@@ -80,10 +81,7 @@
                                     <header>
 										<h2>Seinna Einstaklingsverkefnið</h2>
 									</header>
-                                    <p>
-                                    Hér á að hanna parametrískt, geirneglt módel. Erfiðasti parturinn við þetta var að finna hvað ætti að hanna. Nokkrar hugmyndir sem fengust voru þvottakarfa, standur fyrir heyrnartól eða borð fyrir fartölvu uppi í rúmi. Hins vegar endaði ég á að reyna að gera skóhillu þar sem mig vantar eina svoleiðis inn á heimilið. 
-                                    
-                                    </p>
+
                                     
 								</section>
 
