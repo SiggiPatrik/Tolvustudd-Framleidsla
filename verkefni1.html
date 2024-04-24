@@ -66,7 +66,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                             <img src="images/GitBash.png" alt="File explorer screenshot showing Git Bash">
                         </div>
 
-                        <p>Félagi minn og samnemandi hann Sindri Dagur er flinkur í GitHub svo hann ráðlagði mér að nota eftirfarandi skipanir til að koma local foldernum á GitHub:</p>
+                        <p>
+                            Félagi minn og samnemandi hann Sindri Dagur er flinkur í GitHub svo hann ráðlagði mér að nota eftirfarandi skipanir til að koma local foldernum á GitHub:
+                        </p>
 
                         <pre>
     <code>
@@ -77,8 +79,29 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     </code>
                         </pre>
 
-                        <p>Þetta bara svínvirkaði í fyrstu tilraun svo ekki þurfti að hafa meiri áhyggjur af því. Síðustu þrjár línurnar þarf svo að framkvæma í hvert sinn sem það á að vista breytingar úr local folder yfir í GitHub repositoryið. Að sjálfsögðu er commentið ekki það sama að hverju sinni samt, heldur það sem er viðeigandi í hvert skipti. Ef ég ætla mér svo að vinna á nýrri tölvu eða vil vera viss um að ég sé að vinna með sama file og er á GitHub þá finn ég mér folder sem ég vil vinna í og geri 'git clone' þar, annars duga síðustu þrjú skrefin til að uploada aftur á github.</p>
-
+                        <p>
+                            Þetta bara svínvirkaði í fyrstu tilraun svo ekki þurfti að hafa meiri áhyggjur af því. Síðustu þrjár línurnar þarf svo að framkvæma í hvert sinn sem það á að vista breytingar úr local folder yfir í GitHub repositoryið. Að sjálfsögðu er commentið ekki það sama að hverju sinni samt, heldur það sem er viðeigandi í hvert skipti. Ef ég ætla mér svo að vinna á nýrri tölvu eða vil vera viss um að ég sé að vinna með sama file og er á GitHub þá finn ég mér folder sem ég vil vinna í og geri 'git clone' þar, annars duga síðustu þrjú skrefin til að uploada aftur á github.
+                        </p>
+                        <h3>Uppsetning á GitHub - part II</h3>
+                        <p>
+                            Seinna á önninni frétti ég af <a href="https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop">GitHub Desktop appinu</a>
+                        </p>
+                        <a href="https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop">
+                            <div class="row aln-center">
+                                <img src="images/Verkefni1/GitHubDesktop.png" width="400" alt="GitHub Desktop logo">
+                            </div>
+                        </a>
+                        <p>
+                            Það er miklu meira 'user-friendly' og hjálpar mikið með conflicting merges með því að einfalda hvernig maður velur og samtvinnar breytingar þegar fleiri en einn aðili er að vinna í sömu skránni, eins og gerðist í lokaverkefninu. Á næstu mynd má sjá hvernig viðmótið lítur út:
+                        </p>
+                        <div class="row aln-center">
+                            <img src="images/Verkefni1/GitHubDesktopBreytingar.png" width="1000" alt="GitHub Desktop breytingar">
+                        </div>
+                        <p>
+                        Eftir að prófa þetta þá mun ég ekki snúa aftur í Git Bash.
+                        </p>
+                        
+                        <hr>
                         <h3>Breytingar á síðunni</h3>
                         <p>
                             Ég eyddi miklum tíma í að dunda mér við að snyrta sniðmátið og setja inn suma hluti og fjarlægja aðra. Ég nýtti mér fyrri þekkingu á HTML til að fikta mig áfram, frekar en að googla eða afrita frá öðrum. Ég mun líklegast aldrei klára það alveg en vonandi get ég talið útlit vefsíðunnar ásættanlegt að lokum. 
@@ -94,40 +117,85 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                             <img src="images/Verkefni1/millikafli2.png" width="900" alt="Millikafli2">
                         </div>
                         <p>
-                        Svo í stað þessa að reyna að finna nóg af gagnslausum upplýsingum til að filla út þessi sniðmát ákvað ég bara að sleppa þeim. Myndin í bakgrunn seinni millikaflans var líka bakgrunnur í efsta 
+                            Svo í stað þessa að reyna að finna nóg af gagnslausum upplýsingum til að filla út þessi sniðmát ákvað ég bara að sleppa þeim. 
+                            <br>
+                        </p>
+                        <hr>
+                        <h3>Myndir og skjáskot</h3>
+                        <p>
+                            Að hlaða myndum á síðuna er frekar einfalt. Það þarf bara að hafa myndina vistaða inni í möppunni sem GitHub skoðar og vísa til þeirra með viðeigandi hlekk. Hins vegar er sniðugt að hafa góðan skjalastrúktúr á myndunum sínum, t.d. hafa 'images' möppu og svo sér möppu fyrir hverja síða þar undir. Fyrir fyrsta verkefnið (þessa síðu) gleymdist það en fljótt sá ég hversu mikla ringulreið það skapaði. Því skipulagði ég 'images' möppuna mína aðeins betur en það þýðir að þá þarf ég handvirkt að uppfæra sérhvern hlekk á myndirnar sem voru ekki vistaðar á réttum stað.
+                            <br>
+                            Á flestum stöðum kaus ég að hafa myndirnar 'centered' en til þess nýtti ég mér klasann sem fylgdi með CSS skránni. Með hjálp hans bý ég til div sem inniheldur mynd svona: 
+                        </p>
+<pre>
+  <code>
+    &ltdiv class="row aln-center"&gt
+        &ltimg src="images/..." width="..." alt="...">
+    &lt/div&gt
+  </code>
+</pre>
+
+                        <p>
+                            Ég ákvað einnig að taka burt banner myndina sem var efst á öllum síðunum en hún leit svona út og var frekar óspennandi:
+                        </p>
+                        <div class="row aln-center">
+                            <img src="images/banner_org.jpg" width="768" alt="Gamli bannerinn">
+                        </div>
+                        <p>
+                            Nei ykkur er ekki að missjást eða myndin ekki að hlaðast upp í nógu góðum gæðum. Myndin var sem sagt bara brúnt-hvítt óskýrt 'blur'. Að skipta henni út var ekki jafn einfalt og að setja aðrar myndir því þessi mynd birtist ekki sem partur af HTML kóðanum:
+                        </p>
+                        <div class="row aln-center">
+                            <img src="images/Verkefni1/headerHTML.png" alt="Header hluti af HTML">
+                        </div>
+                        <p>
+                            Hér að ofan sést 'header' hluti HTML skránnar og þar má hvergi finna hlekk að mynd. Hvergi annarsstaðar í HTML skránni var vísað í banner mynd en það væri einum of að fara að sýna allan HTML kóðann hér í myndum svo látum þessa sönnun duga.
+                            <br>
+                            Því næst ráðfærði ég mig við hinn vitra ChatGPT og lét hann lesa alla CSS skránna mína og JavaScript skrárnar en hvergi sagðist hann sjá hvar banner myndin var valin í kóðanum. Ég lét hann einnig kíkja á HTML kóðann en hann var sammála mér um að myndina var eigi að finna þar. Chat sagði að líklega ætti að finna myndina í JavaScript skrá og eins og flón þá treysti ég honum.
+                            <br>
+                            Því fór ég sjálfur að gramsa í JavaScript skránni og fann ekkert eftir langa leit en svo tók við skoðun á CSS skrám. Snemma við skoðun á CSS skránni main.css með notkun CTRL+F leitar á orðinu "banner" fannst kafli sem var mjög skýrt merktur "banner". Sjá má byrjun hans hér:
+                        </p>
+                        <div class="row aln-center">
+                            <img src="images/Verkefni1/bannerCSS.png" alt="Banner hluti af CSS">
+                        </div>
+                        <p>
+                            Ég var hæstánægður þegar ég sá þetta en þrátt fyrir ítarlega skoðun á þessum hluta fannst ekkert. Eftir frekari leit þá fann ég loksins vísun í myndina:
+                        </p>
+                        <div class="row aln-center">
+                            <img src="images/Verkefni1/headerCSS.png" alt="header hluti af CSS">
+                        </div>
+                        <p>
+                            Loksins gat ég skipt um banner mynd en því miður er smá vesen að hafa mismunandi banner myndir fyrir hverja síðu þar sem myndin er skilgreind í CSS skránni. Annaðhvort þyrfti ég að afrita CSS skrána og hafa eina skrá fyrir hverja síðu eða ég þyrfti að copya allan main hlutann og breyta nafninu á header klasanum og öllum klösum undir honum fyrir hverja síðu. Þess vegna ákvað ég frekar bara að halda mig við sama banner á öllum síðum. Þar að auki er hann líka bara helvíti nettur.
                         </p>
 
-                    <h3>Myndir og skjáskot</h3>
-                    <p>Það er nú enn ekki mikið um myndir á síðunni (allavega ekki enn). En þær myndir sem eru á síðunni voru ekki með neitt vesen og óþarfi var að smækka þær fyrir síðuna. Hins vegar er myndin hér ofan á síðunni með leiðindi því ég fæ hana ekki til að vera á miðri síðunni, sama hvað ég geri við css kóðann.</p>
-
-                    <h3>Væntingar mínar til áfangans</h3>
-                    <p>Ég vil að þessi áfangi hjálpi mér að skipuleggja og framkvæma töff verkefni sem ég get svo sett fram skipulega á þessa síða og notað hana sem part af umsóknum. Ég vil leggja mig fram í að gera þessi verkefni vel og sérstaklega að greina vel frá þeim svo þessi síða nýtist sem fjöður í hattinum mínum í framtíðinni.</p>
+                        <hr>
+                        <h3>Væntingar mínar til áfangans</h3>
+                        <p>Ég vil að þessi áfangi hjálpi mér að skipuleggja og framkvæma nett og krefjandi verkefni sem ég get svo sett fram á fagmannlegan hátt á þessari síðu og vonandi notað hana sem part af starfs- og skólaumsóknum. Ég vil leggja mig fram í að gera þessi verkefni vel og sérstaklega að greina vel frá þeim svo þessi síða nýtist sem fjöður í hattinum mínum í framtíðinni.</p>
 
                     </div>
                 </section>
             </article>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/sigur%C3%B0ur-patrik-fjalarsson-hagal%C3%ADn-1284042a7/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="mailto:siggipatrik@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                <li><a href="call:+3547713106" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </footer>
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/sigur%C3%B0ur-patrik-fjalarsson-hagal%C3%ADn-1284042a7/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:siggipatrik@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="call:+3547713106" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
 
         </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
     </body>
