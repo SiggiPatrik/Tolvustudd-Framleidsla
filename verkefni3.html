@@ -1,143 +1,240 @@
 <!DOCTYPE HTML>
 <!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Spectral by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Verkefni 3</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Verkefni 3</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Spectral</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Valmynd</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Heim</a></li>
-											<li><a href="verkefni1.html">Verkefni 1</a></li>
-											<li><a href="verkefni2.html">Verkefni 2</a></li>
-                                            <li><a href="verkefni3.html">Verkefni 3</a></li>
-                                            <li><a href="lokaverkefni.html">Lokaverkefni</a></li>
-                                            <li><a href="tolv_velb2.html">Tölvustýrður Vélbúnaður 2</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+            <!-- Header -->
+            <header id="header" class="alt">
+                <h1><a href="index.html">Spectral</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="special">
+                            <a href="#menu" class="menuToggle"><span>Valmynd</span></a>
+                            <div id="menu">
+                                <ul>
+                                    <li><a href="index.html">Heim</a></li>
+                                    <li><a href="verkefni1.html">Verkefni 1</a></li>
+                                    <li><a href="verkefni2.html">Verkefni 2</a></li>
+                                    <li><a href="verkefni3.html">Verkefni 3</a></li>
+                                    <li><a href="lokaverkefni.html">Lokaverkefni</a></li>
+                                    <li><a href="tolv_velb2.html">Tölvustýrður Vélbúnaður 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-                
-				<!-- Main -->
-					<article id="main">
-						<header>
-							<h2>Verkefni 3</h2>
-							<p>3D prentun og 3D skönnun </p>
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
 
-								<section>
-									<h2>Inngangur</h2>
-									<p>Þessu verkefni er skipt í þrennt. Fyrsti hluti er að hanna módel fyrir 3D prentun sem ekki væri hægt að framleiða með frádráttaraðferðum. Í öðrum hluta á að 3D skanna einhvern hlut með t.d. photogrammetríu. Þriðji hlutinn tengist fyrsta hlutanum smá. Í honum á að ákvarða hönnunarreglur eða skorður vegna prentara. Til dæmis lágmarksveggþykkt, þörf á stuðning, max bridging lengd o.s.frv.  </p>
-									<hr />
-                                </section>
-                                
-                                <section>
-									<header>
-										<h2>Hönnun á 3D módeli</h2>
-									</header>
-									<p>Módelið sem hannað var er svokallaður "spacer" sem á að halda sellunum kyrrum innan Team Spark bílsins. Samtals eru 144 sellur í bílnum, þeim er svo skipt í 6 segment og innan í hverju segmenti eru tveir 'cell banks'. Fyrir fólk sem er lélegt í hugarreikning þá þýðir það að í hverjum cell bank eru 12 sellur í hverjum cell bank. Sellurnar líta svona út:</p>
-									<div class="row aln-center">
-                                        <img src="images/Verkefni3/sella.jpg" alt="Melasta pouch cell" style="width:40%">
-                                    </div>
-									<p>
-                                    Svörtu og rauðu plaststykkin hylja 'tabba' sellunnar. Þessir tabbar tengjast többum hinna sellanna í bankanum og eru punktsoðnir saman. Tabbarnir eru svo þræddir í gegnum spacerinn og í gegnum PCB bretti sem kallast HCPCB. Spacerinn má sjá á næstu mynd:
-                                    </p>
-                                    <div class="row aln-center">
-                                        <img src="images/Verkefni3/spacergamall.png" alt="Spacer" style="width:60%">
-                                    </div>
-                                    <p>
-                                    Hér sjást löngu og mjóu götin sem tabbarnir fara í gegnum. Vandamál kom samt upp því þegar HCPCB er sett ofan á spacerinn og fest við eins og á mynd
-                                    </p>
-                                    <div class="row aln-center">
-                                        <img src="images/Verkefni3/HCPCBsamsett.webp" alt="HCPCB og Spacer" style="width:60%">
-                                    </div>
-                                    En í þverskurð má sjá vandamálið sem myndast þar sem HCPCB og spacer mætast. Götin á HCPCB og spacer eru ekki alveg eins og því eru líkur á að tabbarnir komist ekki auðveldlega í gegn, sjá mynd:
-                                    <div class="row aln-center">
-                                        <img src="images/Verkefni3/TabsProblem.jpg" alt="Spacer" style="width:60%">
-                                    </div>
-                                    <hr/>
-								</section>
-                                
-                                <section>
-                                    <h2>3D skönnun</h2>
-                                    <p>
-                                    Fyrst googlaði ég hvaða forrit fyrir iPhone væru góð í að 3d scanna hluta. Mér leist best á Polycam af þeim sem ég las um. Ég sótti það og leitaði svo að hlut til að 3d scanna. Til að fá sem mest úr forritinu náði ég mér í 7 daga 'free trial' sem ég vona að ég muni eftir að cancella áður en ég byrja að borga. 
-                                    </p>
-                                    <p>
-                                    Hluturinn sem ég ákvað að skanna er svartur 3d prentaður froskur með stóran rass. Hér má sjá útlit hans á venjulegum myndum:
-                                    </p>
-                                    <div class="row aln-center">
-                                        <img src="images/Verkefni3/froskur1.jpg" alt="Froskur framhlið" style="width:40%">
-                                        <img src="images/Verkefni3/froskur2.jpg" alt="Froskur bakhlið" style="width:40%">
-                                    </div>
-                                    <p>
-                                    Síðan er froskurinn skannaður með Polycam. Frosknum er stillt upp á flötu og einlita yfirborði, t.d. trékollur. Enginn slíkur fannst svo borðið á Smyrilsvegi var notað sem gerði það að smá veseni að ná myndum allan hringinn en það tókst þó. Polycam mælir með að taka 50-100 myndir jafndreifðar hringinn í kringum hlutinn. Fyrsta tilraun var gerð til að scanna hlutinn. Einn hringur var farinn í kringum hlutinn og svo smá auka að framan á hlutnum. Í heild voru 55 myndir teknar. Eftir sjálfkrafa processing hjá Polycam var niðurstöðunni exportað sem .stl yfir í tölvu og þaðan var Fusion svo embeddað í vefsíðuna eins og sjá má hér að neðan.
-                                    </p>
-                                    <div class="row aln-center">
-                                    <iframe src="https://myhi386.autodesk360.com/shares/public/SH512d4QTec90decfa6eb4213abab14fd9d7?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                                    </div>
-                                    Niðurstaðan var aðeins betri í Polycam forritinu sjálfu en þar sést litur undirstöðunnar og frosksins skýrt, ásamt því að hafa aðeins betri yfirborðsáferð.
-                                    <hr>
-                                    
-                                    <h4>Önnur tilraun</h4>
-                                    <p>
-                                    Nú var ákveðið að skanna eitthvað stærra, og þá helst eitthvað sem er ekki svart til að athuga hvort það sé að hafa mikil áhrif á gæði 3d skönnunnar. Í þetta sinn varð Team Spark meðlimurinn Snorri Arnarsson fyrir valinu. Hann var látinn sitja grafkyrr í stól og mátti ekki blikka á meðan hann var skannaður. Niðurstaðan úr þessari skönnun leit svona út sem .stl file í Fusion:
-                                    </p>
-                                    <div class="row aln-center">
-                                    <iframe src="https://myhi386.autodesk360.com/shares/public/SH512d4QTec90decfa6e05ff83303002f49a?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                                    </div>
-                                </section>
+            <!-- Main -->
+            <article id="main">
+                <header>
+                    <h2>Verkefni 3</h2>
+                    <p>3D prentun og 3D skönnun </p>
+                </header>
+                <section class="wrapper style5">
+                    <div class="inner">
 
-							</div>
-						</section>
-					</article>
+                        <section>
+                            <h2>Inngangur</h2>
+                            <p>Þessu verkefni er skipt í þrennt. Fyrsti hluti er að hanna módel fyrir 3D prentun sem ekki væri hægt að framleiða með frádráttaraðferðum. Í öðrum hluta á að 3D skanna einhvern hlut með t.d. photogrammetríu. Þriðji hlutinn tengist fyrsta hlutanum smá. Í honum á að ákvarða hönnunarreglur eða skorður vegna prentara. Til dæmis lágmarksveggþykkt, þörf á stuðning, max bridging lengd o.s.frv.  </p>
+                            <hr />
+                        </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/sigur%C3%B0ur-patrik-fjalarsson-hagal%C3%ADn-1284042a7/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:siggipatrik@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                            <li><a href="call:+3547713106" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+                        <section>
+                            <header>
+                                <h2>Hönnun á 3D módeli</h2>
+                            </header>
+                            <p>Módelið sem hannað var er svokallaður "spacer" sem á að halda sellunum kyrrum innan Team Spark bílsins. Samtals eru 144 sellur í bílnum, þeim er svo skipt í 6 segment og innan í hverju segmenti eru tveir 'cell banks'. Fyrir fólk sem er lélegt í hugarreikning þá þýðir það að í hverjum cell bank eru 12 sellur í hverjum cell bank. Sellurnar líta svona út:</p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/sella.jpg" alt="Melasta pouch cell" style="width:40%">
+                            </div>
+                            <p>
+                                Svörtu og rauðu plaststykkin hylja 'tabba' sellunnar. Þessir tabbar eru beygðir til að tengjast többum hinna sellanna í bankanum og eru punktsoðnir saman. Tabbarnir eru þræddir í gegnum spacerinn og í gegnum PCB bretti sem kallast HCPCB. Spacerinn má sjá á næstu mynd:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/spacergamall.png" alt="Spacer" style="width:60%">
+                            </div>
+                            <p>
+                                Hér sjást löngu og mjóu götin sem tabbarnir fara í gegnum. Vandamál kom samt upp því þegar HCPCB er sett ofan á spacerinn og fest við eins og á mynd
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/HCPCBsamsett.webp" alt="HCPCB og Spacer" style="width:60%">
+                            </div>
+                            Gróf teikning af þverskurði á núverandi spacer og HCPCB sýnir vandamálið sem kemur upp þegar reynt er að þræða tabbinn í gegn. Götin á HCPCB og spacernum mætast ekki allstaðar alveg rétt á, sjá mynd:
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/TabsProblem.png" alt="Spacer problem">
+                            </div>
+                            <p>
+                                Tabbarnar eru samt svo mjóir að þeir bogna við minnsta álag. Hægt að nýta þann eiginleika með því að láta spacerinn stýra többunum í gegn með því að teikna upp ákveðin svona 'guide curves' í stað þess að hafa bara vítt op. Þá ætti spacerinn sjálfur að leiða tabbinn beint í gegnum HCPCB plötuna sem einfaldar þá samsetningu.
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/TabsSolution.png" alt="Spacer solution">
+                            </div>
 
-			</div>
+                            <p>
+                                Þetta er svo útfært í Inventor á eftirfarandi hátt:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/ThreadVirkar1.jpg" alt="Spacer inventor solution middle" width="70%">
+                            </div>
+                            <p>
+                                Á endum spacersins er samt ýktari lausn þar sem tabbinn þarf að ferðast lengra þar, sjá mynd:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/Thread3.jpg" alt="Enda tab curve">
+                            </div>
+                            <p>
+                                Í næsta glugga er hægt að sjá loka útgáfu af módelinu með innbyggðri útgáfu af Fusion360:
+                            </p>
+                            <div class="row aln-center">
+                                <iframe src="https://myhi386.autodesk360.com/shares/public/SH512d4QTec90decfa6e26522776ab6fc250?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                            </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                            <br>
+                            <h2>Framleiðsla og skorður</h2>
+                            <p>
+                                Sellurnar í bílnum eiga það til að hitna mjög mikið. Þess vegna er regla í FSG reglubálkinum sem segir til um að íhlutir sem koma nálægt sellunum þurfi að vera eldvarnir skv. opinberum stöðlum:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/UL94.png" alt="Regla um staðla" width="80%">
+                            </div>
+                            <p>
+                                Því er eldvarið plast (Smartfil FP ABS filament) sérpantað frá Spáni sem stenst kröfur UL94 V-0 staðalsins. Þetta plast er dýrara en algengustu plöstin og því er það ekki notað í tilraunaprentum þar sem eingöngu er verið að athuga hvernig tabbarnir komast í gegn. Prentið virkaði og hægt var að koma sellunum í gegn.
+                            </p>
+                            <p>
+                                Eftir að búið var að staðfesta með ódýrara plasti að tabbarnir kæmust auðveldlega í gegn var gerð tilraun til að prenta með FP ABS plastinu. Nokkrar tilraunir hafa verið gerðir fyrir 2 árum því ónotuð hræ af gömlum útgáfum af spacernum hafa fundist á víð og dreif í Spark gámnum og á Smyrilsvegi. Sum þeirra voru ansi verpt en önnur ekki. Því var ekkert annað til ráða en að prófa að prenta. Í fyrsta prenti með FP ABS í ár (samt fyrir byrjun þessa áfanga) voru prentstillingar ekki allar skráðar niður heldur bara infill. Það prent virkaði svo þegar 3d verkefni áfangans byrjaði var reynt að prenta aftur. Sú tilraun heppnaðist ekki því spacerinn var örlítið verptur eftir prentun. Einnig voru töluverð vandamál með bridging á sumum stöðum spacersins. Því þurfti að fara að skoða stillingar upp á ný.
+                            </p>
+                            <p>
+                                Nokkur datasheet fundust á netinu, ásamt því að hitastig var merkt á rúllunni sjálfri en engar heimildir voru alveg sammála og gáfu upp 'nozzle temp' á bilinu 210-240°C. Ákveðið var að byrja á því að fara eftir hitastigum sem stóðu á rúllunni sjálfri en ekki á datasheeti á netinu frá sömu framleiðendum. Ljóst var að gera þyrfti nokkrar tilraunir svo til að spara plast var eitthvað minna test módel notað. Einföldu bridging testi var hlaðið niður af netinu og skellt í prent. Strax í fyrsta lagi var eitthvað skrítið svo hætt var við prent og það byrjað á ný. Sama vandamál kom upp á sama stað svo þriðja tilraunin var gerð en aftur kom sama vandamál:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/bridgeproblem1.jpg" alt="Bridge test vesen" width="650">
+                                <img src="images/Verkefni3/bridgeproblem2.jpg" alt="Bridge test vesen" width="550">
+                            </div>
+                            <p>
+                                Vandamálið virtist mögulega vera í 3d módelinu sjálfu svo höfundur ákvað að teikna sitt eigið í svipuðum dúr til að tryggja að sú væri ekki raunin. Því var svo skellt í prent en höfundur var allt, allt, allt of bjartsýnn á hversu langt bridge væri hægt að prenta:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/langtbridge.jpg" alt="Bridge test vesen" width="80%">
+                            </div>
+                            <p>
+                                First layer vandamálið kom ekki aftur upp svo það virðist hafa verið módelinu sjálfu að kenna. Prentið átti hinsvegar erfitt með jafnvel stystu brúna. Því var testið minnkað og framkvæmt aftur á ný. Sú útkoma var aðeins betri og loks var hægt að fara að prófa sig áfram með stillingar en ekki eingöngu 3d módelin. Fyrsta prent á stutta 3d módelinu leit svona út:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/mitttest1.jpg" alt="Stutt test" width="80%">
+                            </div>
+                            <p>
+                                Þegar stykkinu er snúið við má sjá vandamálið enn skýrar:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/mitttest1undir.jpg" alt="Stutt test" width="80%">
+                            </div>
+                            <p>
+                                Eftir smá rannsóknarvinnu á google og spjallþráðum hjá áhugamönnum um 3d prent virtist að leiðin til að bæta bridging hæfileika prentsins sé að auka layer height. Því var layer height hækkað úr 0.1 mm og í 0.25 mm. Engu öðru var breytt svo hægt væri að einangra áhrif layer height á bridging og niðurstaðan var þessi:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/mitttest2.jpg" alt="Stutt test" width="80%">
+                            </div>
+                            <p>
+                                Þetta var mun betra og talið nógu gott fyrir spacerinn því bridgin þar voru styttri en lengsta bridgið á testinu. Því var strax skellt í næsta spacer prent með sömu stillingum og á síðasta bridge test stykki. Á næstu myndum má sjá hvernig það leit út.
+                            </p>
+                            <p>Spacer í miðju prenti:</p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/spacer1.jpg" alt="Spacer í prentun" width="80%">
+                            </div>
+                            <br>
+                            <p class="row aln-center">Sjá þetta fallega infill, vá!</p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/spacer2.jpg" alt="Spacer í prentun" width="80%">
+                            </div>
+                            <br>
+                            <p>
+                                Og svo lokaniðurstaðan:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/spacer3.jpg" alt="Lokaniðurstaða af spacer" width="80%">
+                            </div>
+                            <p>
+                                Þar með er þessum parti verkefnisins lokið. Finna má .stl módelið af spacernum sjálfum <a=href"https://www.thingiverse.com/thing:6604480">hér á Thingiverse prófílnum mínum.</a> og fyrir meðlimi Team Spark sem hafa aðgang að TS SharePointinu má finna prentstillingarskjalið <a href="https://reiknistofnun.sharepoint.com/:x:/r/sites/hi-teamspark/_layouts/15/Doc.aspx?sourcedoc=%7B559FC285-EAE5-4E24-9806-BF231D23D1C7%7D&file=Spacer%20prent%20tilraunir.xlsx&action=default&mobileredirect=true">með þessum hlekk hér</a> en aðrir verða að láta sér nægja að sjá screenshot af skjalinu sjálfu:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/Prentstillingar.png" alt="Screenshot af excel skjali með prentstillingum" width="150%">
+                            </div>
+                            <hr/>
 
-	</body>
+                        </section>
+
+                        <section>
+                            <h2>3D skönnun</h2>
+                            <p>
+                                Fyrst googlaði ég hvaða forrit fyrir iPhone væru góð í að 3d scanna hluta. Mér leist best á Polycam af þeim sem ég las um. Ég sótti það og leitaði svo að hlut til að 3d scanna. Til að fá sem mest úr forritinu náði ég mér í 7 daga 'free trial' sem ég vona að ég muni eftir að cancella áður en ég byrja að borga. 
+                            </p>
+                            <p>
+                                Hluturinn sem ég ákvað að skanna er svartur 3d prentaður froskur með stóran rass. Hér má sjá útlit hans á venjulegum myndum:
+                            </p>
+                            <div class="row aln-center">
+                                <img src="images/Verkefni3/froskur1.jpg" alt="Froskur framhlið" style="width:40%">
+                                <img src="images/Verkefni3/froskur2.jpg" alt="Froskur bakhlið" style="width:40%">
+                            </div>
+                            <p>
+                                Síðan er froskurinn skannaður með Polycam. Frosknum er stillt upp á flötu og einlita yfirborði. Best væri að nota hlut sem hægt er að ganga hringinn í kringum, t.d. trékoll en enginn slíkur fannst svo borðið á Smyrilsvegi var notað. Því var smá vesen að ná myndum allan hringinn en það tókst þó. Polycam mælir með að taka 50-100 myndir jafndreifðar hringinn í kringum hlutinn. Fyrsta tilraun var gerð til að scanna hlutinn. Einn hringur var farinn í kringum hlutinn og svo smá auka framan á hlutnum. Í heild voru 55 myndir teknar. Eftir sjálfkrafa processing hjá Polycam var niðurstöðunni exportað sem .stl yfir í tölvu og þaðan var Fusion svo embeddað í vefsíðuna eins og sjá má hér að neðan.
+                            </p>
+                            <div class="row aln-center">
+                                <iframe src="https://myhi386.autodesk360.com/shares/public/SH512d4QTec90decfa6eb4213abab14fd9d7?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                            </div>
+                            Niðurstaðan var aðeins betri í Polycam forritinu sjálfu en þar sést litur undirstöðunnar og frosksins skýrt, ásamt því að hafa aðeins betri yfirborðsáferð.
+                            <hr>
+
+                            <h4>Önnur tilraun</h4>
+                            <p>
+                                Nú var ákveðið að skanna eitthvað stærra, og þá helst eitthvað sem er ekki svart til að athuga hvort það sé að hafa mikil áhrif á gæði 3d skönnunnar. Í þetta sinn varð Team Spark meðlimurinn Snorri Arnarsson fyrir valinu. Hann var látinn sitja grafkyrr í stól og mátti ekki blikka á meðan hann var skannaður. Niðurstaðan úr þessari skönnun leit svona út sem .stl file í Fusion:
+                            </p>
+                            <div class="row aln-center">
+                                <iframe src="https://myhi386.autodesk360.com/shares/public/SH512d4QTec90decfa6e05ff83303002f49a?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                            </div>
+                        </section>
+
+                    </div>
+                </section>
+            </article>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/sigur%C3%B0ur-patrik-fjalarsson-hagal%C3%ADn-1284042a7/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:siggipatrik@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="call:+3547713106" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
